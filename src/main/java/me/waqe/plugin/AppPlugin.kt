@@ -19,8 +19,8 @@ class App : JavaPlugin(), Listener {
     override fun onEnable() {
         instance = this
 
-        this.reloadConfig()
-        this.saveDefaultConfig()
+        //this.reloadConfig()
+        //this.saveDefaultConfig()
 
         this.server.pluginManager.registerEvents(this, this)
         getCommand("version")?.setExecutor(VersionCmd())
