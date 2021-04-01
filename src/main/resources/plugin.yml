@@ -1,13 +1,10 @@
 # main: me.waqe.myspigot.App
-main: me.waqe.#NAME#.#CLASS#
-name: SpigotPluginBase
+main: me.waqe.plugin.App
+name: MySpigotPlugin
 version: '0.1'
 api: '1'
 
 commands:
-  Check:
-    description: Mic test
-    usage: /Check
-  login:
-    description: Login to the server
-    usage: /login <password>
+  version:
+    description: show plugin version
+    usage: /version
