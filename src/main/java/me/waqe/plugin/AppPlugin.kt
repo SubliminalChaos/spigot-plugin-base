@@ -1,6 +1,5 @@
 package me.waqe.plugin
 
-//import me.waqe.myspigot.commands.LoginCommand
 import me.waqe.plugin.commands.VersionCmd
 import org.bukkit.ChatColor
 import org.bukkit.command.Command
