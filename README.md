@@ -28,9 +28,21 @@ import org.bukkit.plugin.java.JavaPlugin
 import org.bukkit.event.Listener
 
 class App : JavaPlugin(), Listener {
+  companion object {
+    lateinit var instance: App
+  }
+
   override fun onEnable() {
+    instance = this
+
+    // this.reloadConfig()
+    // this.saveDefaultConfig()
+ 
     logger.info("Hello there!")
 
-    server.pluginManager.registerEvents(this, this)
+    // this.server.pluginManager.registerEvents(this, this)
+    // this.getCommand("Check")?.setExecutor(this)
+    // getCommand("login")?.setExecutor(LoginCommand())
+
   }
 }
