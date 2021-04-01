@@ -23,8 +23,7 @@ class App : JavaPlugin(), Listener {
         this.saveDefaultConfig()
 
         this.server.pluginManager.registerEvents(this, this)
-        this.getCommand("Check")?.setExecutor(this)
-        getCommand("login")?.setExecutor(VersionCmd())
+        getCommand("version")?.setExecutor(VersionCmd())
     }
 
     override fun onDisable() {
