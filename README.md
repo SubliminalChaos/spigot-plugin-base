@@ -10,6 +10,7 @@ Clone this repo, and then change the following files to match your new package n
 - `src/main/java/me/waqe/#NAME#/` (create the package)
 - `src/main/java/me/waqe/#NAME#/App.kt` (change the package name in line 1)
 - `src/resources/plugin.yml` (There is a `main` field)
+                             (There is a `name` field)
 
 ### Additional Notes
 - The Spigot version is specified in `build.gradle.kts`
