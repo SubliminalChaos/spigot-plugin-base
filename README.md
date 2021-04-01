@@ -19,3 +19,18 @@ Clone this repo, and then change the following files to match your new package n
 
 ## Usage
 To build a JAR file for use with Spigot, run `gradle shadowJar`. The completed file will be in `build/libs`.
+
+NamePlugin.kt:
+
+package me.waqe.#NAME#
+
+import org.bukkit.plugin.java.JavaPlugin
+import org.bukkit.event.Listener
+
+class App : JavaPlugin(), Listener {
+  override fun onEnable() {
+    logger.info("Hello there!")
+
+    server.pluginManager.registerEvents(this, this)
+  }
+}
