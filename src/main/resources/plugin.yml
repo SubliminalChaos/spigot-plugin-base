@@ -1,4 +1,13 @@
-main: me.duncanleo.spigot_plugin_base.App
+# main: me.waqe.myspigot.App
+main: me.waqe.#NAME#.#CLASS#
 name: SpigotPluginBase
 version: '0.1'
 api: '1'
+
+commands:
+  Check:
+    description: Mic test
+    usage: /Check
+  login:
+    description: Login to the server
+    usage: /login <password>
