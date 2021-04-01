@@ -26,6 +26,7 @@ package me.waqe.#NAME#
 
 import org.bukkit.plugin.java.JavaPlugin
 import org.bukkit.event.Listener
+//import me.waqe.myspigot.commands.LoginCommand
 
 class App : JavaPlugin(), Listener {
   companion object {
