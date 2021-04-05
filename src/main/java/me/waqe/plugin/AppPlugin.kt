@@ -1,6 +1,5 @@
 package me.waqe.plugin
 
-import me.waqe.plugin.commands.VersionCmd
 import org.bukkit.ChatColor
 import org.bukkit.command.Command
 import org.bukkit.command.CommandSender
@@ -23,7 +22,6 @@ class App : JavaPlugin(), Listener {
         //this.saveDefaultConfig()
 
         this.server.pluginManager.registerEvents(this, this)
-        getCommand("version")?.setExecutor(VersionCmd())
     }
 
     override fun onDisable() {
