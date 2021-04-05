@@ -28,9 +28,15 @@ class App : JavaPlugin(), Listener {
 
     }
 
-}
+    override fun onCommand(sender: CommandSender, command: Command, label: String, args: Array<String>): Boolean {
+        if (label.equals("version", true)) {
+            if (sender is Player) {
+                //TODO add
+                return true
+            }
+            return true
+        }
 
-@EventHandler
-fun onPlayerJoin(e: PlayerJoinEvent) {
-    e.joinMessage = "Welcome To My Server!"
+        return super.onCommand(sender, command, label, args)
+    }
 }
