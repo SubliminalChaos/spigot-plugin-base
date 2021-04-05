@@ -31,6 +31,7 @@ class App : JavaPlugin() {
     }
 
     private fun registerConfigs() {
+        saveDefaultConfig()
         reloadConfig()
     }
 

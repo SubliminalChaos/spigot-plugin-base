@@ -7,6 +7,6 @@ import org.bukkit.event.player.PlayerJoinEvent
 class ListenerPlayerJoin : Listener {
     @EventHandler
     private fun onPlayerJoin(e: PlayerJoinEvent) {
-        e.player.sendMessage("Welcome to the server, ${e.player}!")
+        e.player.sendMessage("Welcome to the server, ${e.player.displayName}!")
     }
 }
