@@ -22,12 +22,20 @@ repositories {
   maven {
     url = uri("https://oss.sonatype.org/content/repositories/snapshots/")
   }
+  maven {
+    url = uri("https://jitpack.io")
+  }
+  maven {
+    url = uri("https://bitbucket.org")
+  }
 }
 
 dependencies {
   implementation(kotlin("stdlib"))
 
   implementation("org.spigotmc:spigot-api:1.16.5-R0.1-SNAPSHOT")
+
+  compileOnly("com.github.subliminalchaos:Foundation:5.8.1")
 }
 
 tasks.withType<KotlinCompile> {

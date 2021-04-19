@@ -4,13 +4,14 @@ import org.bukkit.event.EventHandler
 import org.bukkit.plugin.java.JavaPlugin
 import org.bukkit.event.Listener
 import org.bukkit.event.player.PlayerJoinEvent
+import org.mineacademy.fo.plugin.SimplePlugin
 
-class App : JavaPlugin(), Listener {
+class App : SimplePlugin(), Listener {
     companion object {
         lateinit var instance: App
     }
 
-    override fun onEnable() {
+    override fun onPluginStart() {
         instance = this
 
         //this.reloadConfig()
@@ -19,8 +20,8 @@ class App : JavaPlugin(), Listener {
         this.server.pluginManager.registerEvents(this, this)
     }
 
-    override fun onDisable() {
-
+    override fun onPluginStop() {
+        super.onPluginStop()
     }
 
 }
